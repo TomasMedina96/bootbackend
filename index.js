@@ -19,7 +19,8 @@ const io = new Server(server, {
     cors: {
       origin: '*',
     },
-  }); 
+    transports: ['websocket', 'polling'], // Asegúrate de incluir 'websocket'
+  });
 
 const openai = new OpenAI({
     baseURL: process.env.URLDEPSEEK,
