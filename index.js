@@ -111,7 +111,7 @@ async function calculateSimilarity(message1, message2) {
 
 const mensajes = new Map(); // Usaremos un Map para almacenar el estado de cada socket
 const initialResponseMessage = JSON.stringify({
-    text: "¡Hola! Gracias por contactarnos. ¿Qué te gustaría hacer?",
+    text: "¡Hola! ¿Qué te gustaría hacer?",
     options: [
         { label: "Ver el menú", value: "Quiero ver el menu" },
         { label: "Ayuda con algunas preguntas", value: "Necesito ayuda" }
